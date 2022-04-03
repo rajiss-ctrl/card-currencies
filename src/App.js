@@ -22,6 +22,7 @@ class App extends React.Component{
   
     return (
       <div className="container">
+        <h1>currency name and currencies which they can be exchanged for</h1>
       <div className="card">
       <div className='box'>
           {this.state.data.map((cards)=>{
@@ -55,7 +56,8 @@ class App extends React.Component{
         })}
       </div>
   
-      </div>        
+      </div> 
+      <p> kodekamp 2, react intermediate Task (rajiss-ctrl)</p>       
       </div>
 
     )
