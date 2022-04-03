@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/card-currencies/static/css/main.83208192.css",
+    "main.js": "/card-currencies/static/js/main.3922a6ae.js",
+    "index.html": "/card-currencies/index.html",
+    "main.83208192.css.map": "/card-currencies/static/css/main.83208192.css.map",
+    "main.3922a6ae.js.map": "/card-currencies/static/js/main.3922a6ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83208192.css",
+    "static/js/main.3922a6ae.js"
+  ]
+}
