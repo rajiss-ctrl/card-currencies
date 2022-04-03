@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+// import CardData from './components/CardData';
+import {allGiftCards} from './Data'
+import './index.css';
+import './App';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// Using the array below, render a list of cards, showing the name and currencies which they can be exchanged for. Any UI at all can be used as long as it is presentable.
+
+// Deploy and host the app on github.
+// Note: If you don’t know how to host a react app on github, use the link below;
+// https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+
+
+class App extends React.Component{
+   constructor(props){
+     super(props)
+     this.state = {
+      data:allGiftCards
+    };
+   }
+  render(){
+  
+    return (
+      <div className="container">
+      <div className="card">
+      <div className='box'>
+          {this.state.data.map((cards)=>{
+          return(
+            
+            <div key={cards.id} className="content">
+                <div className="content-cotainer">
+                   <h3>{cards.title}</h3>
+
+              {
+                (Array.isArray(cards.currencies))?
+              <div>
+                {
+                  cards.currencies.map((curr, i)=>{
+                    console.log(curr)
+                    return (
+                      <ul>
+                        <li>{curr}</li>
+                      </ul>
+                    )
+                    
+                  })
+                }
+              </div>:
+              null
+              }
+                </div>
+
+            </div>
+          )
+        })}
+      </div>
+  
+      </div>        
+      </div>
+
+    )
+  }
+  
 }
 
-export default App;
+export default App
