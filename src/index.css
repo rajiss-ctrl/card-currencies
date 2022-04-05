@@ -1,7 +1,4 @@
 
-
-
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
 
 * {
@@ -47,7 +44,10 @@ body h1 {
     background-position-x: 500%;
   }
 }
-
+body h4{
+    color: #87cefa;
+    text-align: center;
+}
 body .container .card .box {
 display: flex;
 justify-content: center;

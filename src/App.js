@@ -22,7 +22,8 @@ class App extends React.Component{
   
     return (
       <div className="container">
-        <h1>currency name and currencies which they can be exchanged for</h1>
+        <h1>name and currencies which they can be exchanged for</h1>
+        <h4>Gift Cards</h4>
       <div className="card">
       <div className='box'>
           {this.state.data.map((cards)=>{
